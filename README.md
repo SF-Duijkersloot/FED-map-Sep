@@ -57,6 +57,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Ik heb de usedrop.io website getest op accesibilty met de WCAG guidelines. En de conclusie is eigenlijk dat er niet heel veel aandacht is besteedt aan het verbeteren van de accesibility.
+De volgende punten vielen mij op:
+  <ul>
+    <li>Het is bijna ongmogelijk op te navigeren met TAB. Er zijn soms elementen die niet focus-able zijn er soms zijn er random elements die visueel er niet zijn, maar wel midden in de pagina zitten</li>
+    <li>Er wordt geen goed gebruik gemaakt van list list items, waar het wel zou kunnen</li>
+    <li>De alt properties zijn niet altijd goed aangegeven</li>
+    <li>Geen één link opent op target, nu allemaal op _self</li>
+    <li>Er is nu geen light/dark theme voorkeur en ook geen contrast optie</li>
+  </ul>
 
 </details>
 
