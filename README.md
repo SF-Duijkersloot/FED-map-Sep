@@ -77,13 +77,13 @@ De volgende punten vielen mij op:
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/page-breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/breakdown-screen-1.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/breakdown-screen-2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -97,11 +97,14 @@ De volgende punten vielen mij op:
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Had eigenlijk geen moeite met veel van de site, had alleen een vraagje over hoe ik het beste een overlay kon maken met verschillende panels met sticky position.
+Voor de rest gewoon bezig met css schrijven.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+
+  **?? niet gedaan ??**
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
@@ -113,10 +116,9 @@ De volgende punten vielen mij op:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb even met danny kunnen zitten en ik had een vraag over hoe ik het beste de scroll overlay kon maken.
+  Ik heb toen een link gekregen met daarin een voorbeeld van hoe ze dit hadden gedaan met goede uitleg.
+  uiteindelijk heb ik niks gedaan met die link en heb het gewoon zelf opgelost..
 
 </details>
 
@@ -130,12 +132,20 @@ De volgende punten vielen mij op:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik heb in principe bijna hele 1 pagina volledig kunnen opmaken met css, ook al begonnen met js voor de pagina, en het gaat allemaal wel prima.
+  Alleen zat ik wel tijdje te strugglen met een gedeelte in mijn site waar een gedeelte met text in een sticky header omhoog schuift wanneer de panel die erbij hoort voor X % 
+  in het scherm is. Eerst wou ik het doen met getBoundingClient.rect etc, en dan checken wanneer het de bovenkant van de viewport hit, maar dit werkt niet want elke panel is 
+  sticky, dus ze zullen allemaal (3) de bovenkant raken, dus dat werkte niet. En dat is dus nog even proberen.
+  Ook een probleem met die sticky header dus want die is ook sticky in de parent container. En ik wil dat de header op X hoogte eindigt in verhouding met de panel waar het      bij hoort. Maar wanneer ik naar beneden doorscroll, houdt de panel eerder op met scrollen en scrolled de sticky header verder door omdat die gewoon minder height heeft... 
+  en het probleem is dat op de originele pagina, ze een niet hele mooie oplossing hiervoor hebben naar mijn mening, want ze gebruiken position fixed en laten de header gewoon   verdwijning zodra ze het niet meer in beeld willen hebben, maar dat is best wel visueel naar want het is best random dat het verdwijnt, dus ja ik wil het op een nette 
+  manier oplossen
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
+  **?? niet gedaan ??**
+  
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
@@ -146,10 +156,8 @@ De volgende punten vielen mij op:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Met danny gesproken over de observation van de panels en observerAPI is waarschijnlijk wel het beste om te gebruiken, dus gewoon daarmee door proberen
+  - Voor die sticky header heeft danny wel gezegd om het toch te doen met fixed position for een bepaald gedeelte van de scroll en daarna weer sticky om het zo visueel te laten lijken dat het goed werkt.
 
 </details>
 
@@ -177,12 +185,18 @@ De volgende punten vielen mij op:
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Heb de problemen van vorige week kunnen oplossen, was flink veel gezeik met die observerAPI omdat de panels allemaal position sticky hebben op top: 0, dus gaf steeds aan dat ze allemaal tegelijk zichtbaar waren, maar heb het eindelijk kunnen oplossen met hulp van onze vriend GPT.
+Voor de rest heb ik nog hele pagina qua css en html af kunnen maken, dat ging voor de rest allemaal wel prima. 
+Heb ook de rollover scroll kunnen maken voor twee p elements, zodat ze in verschillende richtingen gaan als je scrolled.
+Heb ook nog het menu gemaakt, en dit is ook geen simpel menuutje, maar ik wou het graag echt mooi hebben, dus heb er wel even flink aan moeten zitten, maar is uitendelijk ook gelukt, en het menu zelf heeft al volgensmij 5 micro interacties, maar ja ging wel prima dus.
+Nu bezig met de 2e pagina, helaas wel wat later begonnen, maar het koste gewoon veel tijd om de 1e pagina en het menu te maken. Maar ik denk dat het wel goed komt...
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
+  
+  **?? niet gedaan ??**
+  
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
@@ -238,7 +252,7 @@ De volgende punten vielen mij op:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. MDN
   2. bron 2
   3. ...
 
