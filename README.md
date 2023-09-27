@@ -174,6 +174,24 @@ Voor de rest gewoon bezig met css schrijven.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Ik heb nu opnieuwd de usedrop.io website getest op accesibilty met de WCAG guidelines en deze vergeleken met mijn site.
+  
+  Dit waren de punten verbeter punten voor de originele site:
+  <ul>
+    <li>Het is bijna ongmogelijk op te navigeren met TAB. Er zijn soms elementen die niet focus-able zijn er soms zijn er random elements die visueel er niet zijn, maar wel midden in de pagina zitten</li>
+    <li>Er wordt geen goed gebruik gemaakt van list list items, waar het wel zou kunnen</li>
+    <li>De alt properties zijn niet altijd goed aangegeven</li>
+    <li>Geen één link opent op target, nu allemaal op _self</li>
+    <li>Er is nu geen light/dark theme voorkeur en ook geen contrast optie</li>
+  </ul>
+
+  Dit heb ik nu kunnen verbeteren:
+  <ul>
+    <li>Navigeren met tab is nu beter, er zijn geen random elementen midden in het beeld die er visueel niet zijn</li>
+    <li>Er wordt nu beter gebruik gemaakt van list items waar het toepasselijk is</li>
+    <li>Images hebben nu een toepasselijke alt tekst</li>
+    <li>De meeste links openen nu met target _blank ipv self</li>
+  </ul>
 
 </details>
 
