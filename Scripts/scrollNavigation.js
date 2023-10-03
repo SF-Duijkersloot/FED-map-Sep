@@ -1,7 +1,7 @@
 // Navigation bar scroll
 let prevScrollPos = window.scrollY;
 
-const regularNav = document.querySelector('.regular-nav');
+// const regularNav = document.querySelector('.regular-nav');
 const alteredNav = document.querySelector('.altered-nav');
 
 window.addEventListener('scroll', function() {
