@@ -42,11 +42,11 @@ surfacePlane()
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/First page screenshot.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/Second page screenshot.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -79,13 +79,13 @@ De volgende punten vielen mij op:
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="images/page-breakdown.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/page-breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="images/breakdown-screen-1.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown-screen-1.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="images/breakdown-screen-2.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-screen-2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -244,19 +244,39 @@ Nu bezig met de 2e pagina, helaas wel wat later begonnen, maar het koste gewoon 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Dit is wel het meest kenmerkende gedeelt van mijn site qua surface plane. De code wou alleen niet meewerken aangezien deze panels allemaal sticky waren op top:0 en ik moest weten wanneer een panel ongeveer de bovenkant van de viewport zou raken, maar uiteindelijk raakte ze dus alle 3 tegelijkertijd de bovenkant en dat zat in de weg met de logica van de code etc... uiteindelijk wel gelukt dus daar blij mee :)
+  <img src="readme-images/panel-change 1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/panel-change 2.png" width="375px" alt="uitomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb hier de navigation in en uit het scherm laten komen op scroll. Het bijzondere hiervan is eigenlijk dat ik 2 nav bars heb gebruikt. om een nice overgang te geven van de donkere nav naar de witte nav. Was niet heel moeilijk, maar alsnog wel wat nieuws hiervan geleerd.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Nav zero state (bovenkant van de hele pagina)
+  <img src="readme-images/Nav zero-state.png" width="375px" alt="navbar zero state">
+
+  Nav als je scrolled naar beneden
+  <img src="readme-images/Nav scroll-down.png" width="375px" alt="navbar scroll down">
+
+  Nav als je weer omhoog scrolled
+  <img src="readme-images/Nav scroll-up.png" width="375px" alt="navbar scroll up">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik had wel wat probleempjes met mijn mobile menu. Want ik wou het precies zo maken als op de originele site en daar hebben ze de micro-interactie dat wanneer je een submenu opent, de rest van de items *inactief* worden. en wanneer er geen submenus open zijn, dan worden alle header gewoon weer normaal. Dit leek me opzich wel simpel maar ik weet niet waarom, maar ik kreeg het niet werkend. Grotendeels werkt wel top van het menu behalve dit kleine beetje dus.
+  
+  Menu zero state
+  <img src="readme-images/Mobile menu screenshot 4.png" width="375px" alt="Menu zero state">
+  
+  Menu header 1 open
+  <img src="readme-images/Mobile menu screenshot 3.png" width="375px" alt="Menu header 1 open">
+  
+  Menu header 2 open
+  <img src="readme-images/Mobile menu screenshot 2.png" width="375px" alt="Menu header 2 open">
+  
+  Menu alle header gesloten
+  <img src="readme-images/Mobile menu screenshot 1.png" width="375px" alt="Menu alle headers gesloten">
 </details>
 
 
@@ -272,8 +292,7 @@ Nu bezig met de 2e pagina, helaas wel wat later begonnen, maar het koste gewoon 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. MDN
-  2. bron 2
-  3. ...
+  1. MDN Web Docs
+  2. ChatGPT
 
 </details>
