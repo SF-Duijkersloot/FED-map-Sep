@@ -41,11 +41,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @font-face {
     font-family: 'Ivar Text Hydro';
-    src: url(./Fonts/Ivar\ Text\ Hydro\ Regular.ttf);
+    src: URL(../Fonts/Ivar\ Text\ Hydro\ Regular.ttf);
 }
 @font-face {
     font-family: 'ABC Normal';
-    src: url(./Fonts/ABC\ Normal\ Book.ttf);
+    src: URL(../Fonts/ABC\ Normal\ Book.ttf);
 }
 
 
@@ -77,7 +77,7 @@ p, h1, h2, h3, h4, h5, h6 {
     --body-secondary-background-color-raw-value: 251, 248, 243;
 
     --main-font: "ABC Normal";
-    --accent-font: "Ivar Tet Hydro";
+    --accent-font: "Ivar Text Hydro";
     --uppercase-transform: uppercase;
     --capitalize-transform: capitalize;
 
