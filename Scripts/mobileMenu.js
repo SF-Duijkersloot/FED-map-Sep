@@ -41,7 +41,7 @@ function closeOpenSubmenus() {
     if (areAllSubmenusClosed) {
         menuItems.forEach(item => {
             item.classList.remove('inactive');
-            console.log("removing class")
+            // console.log("removing class")
         });
     }
     
