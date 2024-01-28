@@ -1,4 +1,4 @@
-// Hamburger menu
+// hamburger menu
 const hamburgerMenus = document.querySelectorAll(".hamburger-menu");
 const regularNav = document.querySelector(".regular-nav");
 const menuContainer = document.querySelector(".mobile-menu-container");
@@ -9,17 +9,17 @@ hamburgerMenus.forEach(menu => {
         menu.classList.toggle("open");
         menuContainer.classList.toggle("open");
         
-        // Add or remove classes to trigger animations
+        // als menu open is, dan:
         if (menuContainer.classList.contains("open")) {
             menuContainer.classList.add("fade-in");
             menuContainer.classList.remove("fade-out");
             menuContainer.classList.add("show");
             regularNav.classList.add("menu-open");
             regularNav.classList.remove("close-menu");
-        } else {
+        } else { // menu hiden
             menuContainer.classList.add("fade-out");
             menuContainer.classList.remove("fade-in");
-            setTimeout(() => {
+            setTimeout(() => { // kleine delay in verband met de animation
                 menuContainer.classList.remove("show");
             }, 800);
             regularNav.classList.remove("menu-open");
@@ -30,10 +30,11 @@ hamburgerMenus.forEach(menu => {
 
 
 // Bron: beetje hulp van ChatGPT met bugs fixen
-// Mobile menu
+// Mobile menu screen
 const menuHeaders = document.querySelectorAll('.menu-header');
 const menuItems = document.querySelectorAll('.mobile-menu-container > ul > li');
 
+// function om de submenus te closen
 function closeOpenSubmenus() {
     const allSubmenuContainers = document.querySelectorAll('.submenu-container');
     const areAllSubmenusClosed = Array.from(allSubmenuContainers).every(submenu => !submenu.classList.contains('open'));
@@ -70,7 +71,7 @@ menuHeaders.forEach(header => {
         }
         
         submenu.classList.toggle('open');
-        const maxHeight = submenu.classList.contains('open') ? submenu.scrollHeight + "px" : "0";
+        const maxHeight = submenu.classList.contains('open') ? submenu.scrollHeight + "px" : "0"; // ? .. : "0"; verkorte versie van if-else statement, als de submenu open class heeft, dan gaat de submenu open.
         submenu.style.maxHeight = maxHeight;
         
         menuItems.forEach(item => {
@@ -81,20 +82,20 @@ menuHeaders.forEach(header => {
         
         header.parentNode.classList.remove('inactive');
         
-        // Rotate the icon when the submenu is open
+        // arrow icon rotaten als subMenu open is
         const iconRotate = header.querySelector('.icon-rotate');
         if (iconRotate) {
             iconRotate.style.transform = isSubMenuOpen ? 'rotate(0deg)' : 'rotate(180deg)';
         }
     });
 });
-
+// subMenus closen als escape wordt geclicked
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeOpenSubmenus();
     }
 });
-
+// Submenus closen als er buiten de submenus word geclicked
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.menu-header')) {
         closeOpenSubmenus();
