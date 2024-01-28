@@ -1,3 +1,5 @@
+// Code voor de panel animations, wanneer een nieuwe panel in het scherm is, dan moet de de header/counter veranderen
+
 // Bron: beetje hulp van ChatGPT
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,6 +48,5 @@ document.addEventListener("DOMContentLoaded", function () {
     updateIndex();
   });
 
-  // Initial update
   updateIndex();
 });
