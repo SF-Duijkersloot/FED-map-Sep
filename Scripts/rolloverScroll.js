@@ -1,47 +1,48 @@
+// Code voor de rollover van 2 tekst lines op de homepage.
 // Bron: beetje hulp van ChatGPT
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Calculate initial translateX values
+    // standaard posities
     const initialTranslateX1 = -250;
     const initialTranslateX2 = -130;
   
-    // Get references to the elements
     const rolloverTextWrap = document.querySelector('.rollover-text-wrap');
     const rolloverTextElements = document.querySelectorAll('.rollover-text');
   
-    // Function to update the transform property of rollover-text elements
+    // op bsis van de scrollprogress, beide teksten op de x axis bewegen
     function updateTransform(scrollProgress) {
+      //beide x translations gaan andere kant op d.m.v. "-" & "+" 
       const translateX1 = initialTranslateX1 - scrollProgress * 150;
       const translateX2 = initialTranslateX2 + scrollProgress * 150;
-  
+
+      // translation values toepassen
       rolloverTextElements[0].style.transform = `translateX(${translateX1}px)`;
       rolloverTextElements[1].style.transform = `translateX(${translateX2}px)`;
     }
   
-    // Options for the Intersection Observer
+    // intersection observer options
     const observerOptions = {
-      threshold: [0, 1], // Trigger the observer when the element enters or exits the viewport
+      threshold: [0, 1], // begin als het hele element is de viewport is en eindig als het helemaal buiten is
     };
   
-    // Create an Intersection Observer
+    // intersection observer
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      const scrollProgress = entry.intersectionRatio; // Use intersectionRatio directly
+      const scrollProgress = entry.intersectionRatio; // intersectionRatio gebruiken voor de scrollProgress
       updateTransform(scrollProgress);
     }, observerOptions);
   
-    // Observe the rolloverTextWrap element
+    // rollover tekst observen
     observer.observe(rolloverTextWrap);
   
-    // Attach scroll event listener
+    // scroll listener maken
     window.addEventListener('scroll', () => {
       const scrollPosition = rolloverTextWrap.getBoundingClientRect().bottom / window.innerHeight;
-      // Ensure scroll progress is between 0 and 1
       const scrollProgress = Math.min(Math.max(scrollPosition, 0), 1);
       updateTransform(scrollProgress);
     });
   
-    // Initial update of the transform based on scroll position
+    // eerste update van de transform op basis van scrollpositie
     window.dispatchEvent(new Event('scroll'));
   });
   
