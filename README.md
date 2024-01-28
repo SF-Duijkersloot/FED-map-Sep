@@ -3,7 +3,7 @@
 console.log("hi");
 ```
 Live site:
-[https://sf-duijkersloot.github.io/FED-map-Sep/](https://sf-duijkersloot.github.io/Front-end-dev-site/)
+https://sf-duijkersloot.github.io/Front-end-dev-site
 
 *Website is gemaakt voor mobiele viewport, dus scale aub je browser naar een geschikt mobiel fomaat.*
 
